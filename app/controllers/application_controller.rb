@@ -17,8 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
-    params
-    binding.pry
+    
   end
 
   get '/account' do
