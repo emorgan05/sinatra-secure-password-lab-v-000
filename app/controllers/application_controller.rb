@@ -18,6 +18,7 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     if params[:username] == nil
+      binding.pry
       redirect "/failure"
     elsif params[:password] == nil
       redirect "/failure"
