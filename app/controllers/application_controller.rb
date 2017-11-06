@@ -28,8 +28,9 @@ class ApplicationController < Sinatra::Base
         redirect '/failure'
       end
     else
-      redirect '/failure'
       binding.pry
+      redirect '/failure'
+      
     end
   end
 
