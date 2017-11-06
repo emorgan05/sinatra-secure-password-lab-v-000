@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
   post "/login" do
     if params[:username] == ""
       redirect "/failure"
-    elsif params[:password] == nil
+    elsif params[:password] == ""
       redirect "/failure"
     else
       @user = User.find_by(username: params[:username])
